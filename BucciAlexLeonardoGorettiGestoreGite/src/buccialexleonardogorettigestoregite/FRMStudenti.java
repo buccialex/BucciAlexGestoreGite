@@ -91,7 +91,7 @@ public class FRMStudenti extends javax.swing.JFrame {
         TBLStudenti.setEnabled(false);
         jScrollPane2.setViewportView(TBLStudenti);
 
-        BTNCreaStudente.setText("Aggiugni studente");
+        BTNCreaStudente.setText("Aggiungi studente");
 
         BTNCancellaStudente.setText("Cancella studente");
 

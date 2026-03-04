@@ -206,7 +206,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BTNCreaStudente">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Aggiugni studente"/>
+            <Property name="text" type="java.lang.String" value="Aggiungi studente"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="BTNCancellaStudente">
