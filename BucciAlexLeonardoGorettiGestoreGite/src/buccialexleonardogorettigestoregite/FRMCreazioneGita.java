@@ -56,7 +56,10 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gestore Gite");
         setResizable(false);
+<<<<<<< Updated upstream
         getContentPane().setLayout(new java.awt.GridBagLayout());
+=======
+>>>>>>> Stashed changes
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
