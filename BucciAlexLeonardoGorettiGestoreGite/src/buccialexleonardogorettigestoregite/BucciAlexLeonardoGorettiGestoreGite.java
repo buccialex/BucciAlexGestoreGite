@@ -14,6 +14,8 @@ public class BucciAlexLeonardoGorettiGestoreGite {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        FRMCreazioneGita f = new FRMCreazioneGita();
+        f.setVisible(true);
         
     }
     
