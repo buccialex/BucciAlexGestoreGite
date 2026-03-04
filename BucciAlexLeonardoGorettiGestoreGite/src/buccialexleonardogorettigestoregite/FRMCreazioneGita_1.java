@@ -8,25 +8,15 @@ package buccialexleonardogorettigestoregite;
  *
  * @author goretti.leonardo
  */
-public class FRMCreazioneGita extends javax.swing.JFrame {
+public class FRMCreazioneGita_1 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FRMCreazioneGita.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FRMCreazioneGita_1.class.getName());
 
     /**
      * Creates new form FRMCreazioneGita
      */
-    public FRMCreazioneGita() {
+    public FRMCreazioneGita_1() {
         initComponents();
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Windows".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
     }
 
     /**
@@ -39,7 +29,7 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jPanel1 = new javax.swing.JPanel();
+        PNLCreazioneGita = new javax.swing.JPanel();
         LBLIdentificativoGita = new javax.swing.JLabel();
         LBLDurataGita = new javax.swing.JLabel();
         LBLLocationGita = new javax.swing.JLabel();
@@ -54,14 +44,10 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         TBLGite = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Gestore Gite");
-        setResizable(false);
-<<<<<<< Updated upstream
+        setTitle("Creazione gita");
         getContentPane().setLayout(new java.awt.GridBagLayout());
-=======
->>>>>>> Stashed changes
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        PNLCreazioneGita.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         LBLIdentificativoGita.setText("Codice gita:");
 
@@ -70,11 +56,6 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         LBLLocationGita.setText("Luogo gita:");
 
         BTNCreaGita.setText("Crea gita");
-        BTNCreaGita.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BTNCreaGitaActionPerformed(evt);
-            }
-        });
 
         BTNCancellaGita.setText("Cancella gita");
 
@@ -112,25 +93,25 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         TBLGite.setEnabled(false);
         jScrollPane1.setViewportView(TBLGite);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout PNLCreazioneGitaLayout = new javax.swing.GroupLayout(PNLCreazioneGita);
+        PNLCreazioneGita.setLayout(PNLCreazioneGitaLayout);
+        PNLCreazioneGitaLayout.setHorizontalGroup(
+            PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PNLCreazioneGitaLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BTNCreaGita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(BTNCancellaGita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(BTNFormStudenti, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(LBLTitoloGita, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(PNLCreazioneGitaLayout.createSequentialGroup()
+                            .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(LBLIdentificativoGita, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
                                 .addComponent(LBLDurataGita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(LBLLocationGita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(TXTCodiceGita)
                                 .addComponent(TXTDurataGita)
                                 .addComponent(TXTLuogoGita, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)))))
@@ -138,24 +119,24 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 456, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(34, 34, 34))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        PNLCreazioneGitaLayout.setVerticalGroup(
+            PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PNLCreazioneGitaLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(PNLCreazioneGitaLayout.createSequentialGroup()
                         .addComponent(LBLTitoloGita)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LBLIdentificativoGita)
                             .addComponent(TXTCodiceGita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LBLDurataGita)
                             .addComponent(TXTDurataGita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addGroup(PNLCreazioneGitaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LBLLocationGita)
                             .addComponent(TXTLuogoGita, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
@@ -173,18 +154,35 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 119;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 6, 6, 6);
-        getContentPane().add(jPanel1, gridBagConstraints);
+        getContentPane().add(PNLCreazioneGita, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BTNCreaGitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNCreaGitaActionPerformed
-        Gita g = new Gita(TXTLuogoGita.getText(), TXTCodiceGita.getText(), Integer.parseInt(TXTDurataGita.getText()));
-        
-        
-    }//GEN-LAST:event_BTNCreaGitaActionPerformed
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
 
-    
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(() -> new FRMCreazioneGita_1().setVisible(true));
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTNCancellaGita;
@@ -194,11 +192,11 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
     private javax.swing.JLabel LBLIdentificativoGita;
     private javax.swing.JLabel LBLLocationGita;
     private javax.swing.JLabel LBLTitoloGita;
+    private javax.swing.JPanel PNLCreazioneGita;
     private javax.swing.JTable TBLGite;
     private javax.swing.JTextField TXTCodiceGita;
     private javax.swing.JTextField TXTDurataGita;
     private javax.swing.JTextField TXTLuogoGita;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
