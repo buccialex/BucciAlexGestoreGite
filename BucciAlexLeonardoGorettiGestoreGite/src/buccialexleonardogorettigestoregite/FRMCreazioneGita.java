@@ -4,6 +4,8 @@
  */
 package buccialexleonardogorettigestoregite;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author goretti.leonardo
@@ -17,6 +19,17 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
      */
     public FRMCreazioneGita() {
         initComponents();
+        
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Windows".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -56,6 +69,11 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         LBLLocationGita.setText("Luogo gita:");
 
         BTNCreaGita.setText("Crea gita");
+        BTNCreaGita.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNCreaGitaActionPerformed(evt);
+            }
+        });
 
         BTNCancellaGita.setText("Cancella gita");
 
@@ -159,6 +177,24 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void BTNCreaGitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNCreaGitaActionPerformed
+        try{
+            Gita g = new Gita(TXTLuogoGita.getText(), TXTCodiceGita.getText(), Integer.parseInt(TXTDurataGita.getText()));
+            
+        }
+        catch(java.lang.NumberFormatException e){
+            JOptionPane.showMessageDialog(this, "Inserisci un numero per la durata");
+        }
+        catch(IllegalArgumentException e){
+            JOptionPane.showMessageDialog(this, "Riempi tutti i campi");
+        }
+            
+            
+        
+        
+    }//GEN-LAST:event_BTNCreaGitaActionPerformed
+
+
     /**
      * @param args the command line arguments
      */
@@ -183,6 +219,7 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new FRMCreazioneGita().setVisible(true));
     }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTNCancellaGita;

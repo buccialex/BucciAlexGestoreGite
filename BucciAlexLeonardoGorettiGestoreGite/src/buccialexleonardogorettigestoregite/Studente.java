@@ -15,13 +15,13 @@ public class Studente {
     private String nome;
     private String cognome;
     private String matricola;
-    private List<Gita> listaGite;
+    private HashMap<String, Gita> mappaGite;
     
     public Studente(String nome, String cognome, String matricola){
         this.nome = nome;
         this.cognome = cognome;
         this.matricola = matricola;
-        this.listaGite = new ArrayList<>();
+        this.mappaGite = new HashMap<String, Gita>();
     }
 
     public String getNome() {
@@ -48,13 +48,9 @@ public class Studente {
         this.matricola = matricola;
     }
 
-    public List<Gita> getListaGite() {
-        return listaGite;
-    }
+    
 
-    public void setListaGite(List<Gita> listaGite) {
-        this.listaGite = listaGite;
-    }
+    
     
     
 }

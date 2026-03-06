@@ -15,15 +15,27 @@ public class Gita {
     private String luogo;
     private String idGita;
     private Integer durata;
-    private List<Studente> listaStudenti;
+    private HashMap<String, Studente> mappaStudenti;
     
     public Gita(String luogo, String idGita, int durata){
+        if(luogo.isEmpty() || idGita.isEmpty()){
+            throw new IllegalArgumentException("Riempi tutte le caselle");
+        }
         this.luogo = luogo;
         this.durata = durata;
         this.idGita = idGita;
-        this.listaStudenti = new ArrayList<>();
+        this.mappaStudenti = new HashMap<String, Studente>();
+    }
+    
+    public boolean aggiungiStudente(Studente s){
+        if (this.mappaStudenti.containsKey(s.getMatricola())) {
+            return false;
+        }
+        this.mappaStudenti.put(s.getMatricola(), s);
+        return true;
     }
 
+    
     public String getLuogo() {
         return luogo;
     }
@@ -47,13 +59,14 @@ public class Gita {
     public void setDurata(int durata) {
         this.durata = durata;
     }
+    
+    public boolean eliminaStudente(String matricola) {
+        if (this.mappaStudenti.containsKey(matricola)) {
+            this.mappaStudenti.remove(matricola);
+            return true;
+        }
+        return false;
 
-    public List<Studente> getListaStudenti() {
-        return listaStudenti;
-    }
-
-    public void setListaStudenti(List<Studente> listaStudenti) {
-        this.listaStudenti = listaStudenti;
     }
     
     
