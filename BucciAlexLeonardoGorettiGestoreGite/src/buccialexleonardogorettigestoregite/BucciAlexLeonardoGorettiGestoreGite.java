@@ -11,7 +11,8 @@ package buccialexleonardogorettigestoregite;
 public class BucciAlexLeonardoGorettiGestoreGite {
 
     /**
-     * @param args the command line arguments
+     * avvia la prima form della creazione della gita all'avvio del programma
+     * @param args 
      */
     public static void main(String[] args) {
         FRMCreazioneGita f = new FRMCreazioneGita();
