@@ -177,6 +177,10 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Logica bottone per creare la gita
+     * @param evt 
+     */
     private void BTNCreaGitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNCreaGitaActionPerformed
         try{
             Gita g = new Gita(TXTLuogoGita.getText(), TXTCodiceGita.getText(), Integer.parseInt(TXTDurataGita.getText()));
@@ -197,6 +201,7 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
 
     /**
      * @param args the command line arguments
+     * Main della form CreazioneGita
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

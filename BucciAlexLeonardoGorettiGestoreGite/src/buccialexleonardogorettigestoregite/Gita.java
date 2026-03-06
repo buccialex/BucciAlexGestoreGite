@@ -16,7 +16,13 @@ public class Gita {
     private String idGita;
     private Integer durata;
     private HashMap<String, Studente> mappaStudenti;
-    
+ 
+    /**
+     * costruttore della classe Gita
+     * @param luogo
+     * @param idGita
+     * @param durata 
+     */
     public Gita(String luogo, String idGita, int durata){
         if(luogo.isEmpty() || idGita.isEmpty()){
             throw new IllegalArgumentException("Riempi tutte le caselle");
@@ -26,7 +32,12 @@ public class Gita {
         this.idGita = idGita;
         this.mappaStudenti = new HashMap<String, Studente>();
     }
-    
+ 
+    /**
+     * metodo per aggiungere uno studente all' HashMap
+     * @param s
+     * @return 
+     */
     public boolean aggiungiStudente(Studente s){
         if (this.mappaStudenti.containsKey(s.getMatricola())) {
             return false;
@@ -35,31 +46,60 @@ public class Gita {
         return true;
     }
 
-    
+  
+    /**
+     * get di Luogo
+     * @return 
+     */
     public String getLuogo() {
         return luogo;
     }
 
+    /**
+     * set di Luogo
+     * @param luogo 
+     */
     public void setLuogo(String luogo) {
         this.luogo = luogo;
     }
 
+    /**
+     * get di IdGita
+     * @return 
+     */
     public String getIdGita() {
         return idGita;
     }
 
+    /**
+     * set di IdGita
+     * @param idGita 
+     */
     public void setIdGita(String idGita) {
         this.idGita = idGita;
     }
 
+    /**
+     * get di Durata
+     * @return 
+     */
     public Integer getDurata() {
         return durata;
     }
 
+    /**
+     * set di Durata
+     * @param durata 
+     */
     public void setDurata(int durata) {
         this.durata = durata;
     }
-    
+   
+    /**
+     * elimina uno studente in base alla sua matricola
+     * @param matricola
+     * @return 
+     */
     public boolean eliminaStudente(String matricola) {
         if (this.mappaStudenti.containsKey(matricola)) {
             this.mappaStudenti.remove(matricola);

@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /**
- *
+ * classe addebitata alla gestione del file come la lunghezza
  * @author bucci.alex
  */
 public class GestioneFile {
@@ -33,6 +33,9 @@ public class GestioneFile {
         return s;
     }
     
+    /**
+     * classe addebitata alla creazione del file di testo
+     */
     public void generaFile(){
         try {
             RandomAccessFile file = new RandomAccessFile("elenco.dat", "rw");
