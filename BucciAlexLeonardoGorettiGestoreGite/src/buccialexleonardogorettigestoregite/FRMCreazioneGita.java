@@ -177,6 +177,7 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< Updated upstream:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita.java
     private void BTNCreaGitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNCreaGitaActionPerformed
         try{
             Gita g = new Gita(TXTLuogoGita.getText(), TXTCodiceGita.getText(), Integer.parseInt(TXTDurataGita.getText()));
@@ -219,6 +220,9 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new FRMCreazioneGita().setVisible(true));
     }
+=======
+   
+>>>>>>> Stashed changes:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita_1.java
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
