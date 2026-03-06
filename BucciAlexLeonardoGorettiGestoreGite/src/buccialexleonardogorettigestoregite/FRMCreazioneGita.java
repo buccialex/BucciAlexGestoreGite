@@ -8,14 +8,14 @@ package buccialexleonardogorettigestoregite;
  *
  * @author goretti.leonardo
  */
-public class FRMCreazioneGita_1 extends javax.swing.JFrame {
+public class FRMCreazioneGita extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FRMCreazioneGita_1.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FRMCreazioneGita.class.getName());
 
     /**
      * Creates new form FRMCreazioneGita
      */
-    public FRMCreazioneGita_1() {
+    public FRMCreazioneGita() {
         initComponents();
     }
 
@@ -181,7 +181,7 @@ public class FRMCreazioneGita_1 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new FRMCreazioneGita_1().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new FRMCreazioneGita().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
