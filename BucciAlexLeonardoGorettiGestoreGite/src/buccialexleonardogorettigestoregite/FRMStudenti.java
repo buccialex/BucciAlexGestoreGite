@@ -192,6 +192,7 @@ public class FRMStudenti extends javax.swing.JFrame {
 
     /**
      * @param args the command line arguments
+     * Main form Studente
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

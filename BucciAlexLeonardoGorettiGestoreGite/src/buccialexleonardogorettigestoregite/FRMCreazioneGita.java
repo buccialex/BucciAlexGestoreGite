@@ -177,7 +177,14 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita.java
+=======
+    /**
+     * Logica bottone per creare la gita
+     * @param evt 
+     */
+>>>>>>> 816410ff3b17610ca22e8f1f2f7a64a278a9e65e
     private void BTNCreaGitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNCreaGitaActionPerformed
         try{
             Gita g = new Gita(TXTLuogoGita.getText(), TXTCodiceGita.getText(), Integer.parseInt(TXTDurataGita.getText()));
@@ -198,6 +205,7 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
 
     /**
      * @param args the command line arguments
+     * Main della form CreazioneGita
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

@@ -4,6 +4,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
+<<<<<<< HEAD
+=======
+/**
+ * classe addebitata alla gestione del file come la lunghezza
+ * @author bucci.alex
+ */
+>>>>>>> 816410ff3b17610ca22e8f1f2f7a64a278a9e65e
 public class GestioneFile {
 
     /*
@@ -41,6 +48,7 @@ public class GestioneFile {
         }
         return sb.toString();
     }
+<<<<<<< HEAD
 
     /** Legge una stringa di LEN_STRINGA char e rimuove i '*' di riempimento */
     private String leggiStringa(RandomAccessFile file) throws IOException {
@@ -73,6 +81,21 @@ public class GestioneFile {
             scriviStringa(file, g.getIdGita());  // 40 byte
             scriviStringa(file, g.getLuogo());   // 40 byte
             file.writeInt(g.getDurata());        //  4 byte
+=======
+    
+    /**
+     * classe addebitata alla creazione del file di testo
+     */
+    public void generaFile(){
+        try {
+            RandomAccessFile file = new RandomAccessFile("elenco.dat", "rw");
+            //calcolo la dimensione del file per capire quanti record ci sono. 
+            //Questo serve perché ogni nuovo record vine aggiunto in fondo
+            int nRecord = (int) (file.length() / dimensioneRecord);
+            //con il metodo seek ci si sposta all'interno del file alla posizione desiderata
+            file.seek(nRecord * dimensioneRecord);
+            
+>>>>>>> 816410ff3b17610ca22e8f1f2f7a64a278a9e65e
 
         } catch (FileNotFoundException ex) {
             System.out.println("File gite non trovato");
