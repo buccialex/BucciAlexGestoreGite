@@ -177,6 +177,7 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< Updated upstream:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita.java
 <<<<<<< HEAD
 <<<<<<< Updated upstream:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita.java
 =======
@@ -232,6 +233,9 @@ public class FRMCreazioneGita extends javax.swing.JFrame {
    
 >>>>>>> Stashed changes:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita_1.java
 
+=======
+   
+>>>>>>> Stashed changes:BucciAlexLeonardoGorettiGestoreGite/src/buccialexleonardogorettigestoregite/FRMCreazioneGita_1.java
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTNCancellaGita;

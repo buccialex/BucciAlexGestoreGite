@@ -16,6 +16,7 @@ public class Gita {
     private String idGita;
     private Integer durata;
     private HashMap<String, Studente> mappaStudenti;
+<<<<<<< Updated upstream
  
     /**
      * costruttore della classe Gita
@@ -23,6 +24,9 @@ public class Gita {
      * @param idGita
      * @param durata 
      */
+=======
+    
+>>>>>>> Stashed changes
     public Gita(String luogo, String idGita, int durata){
         if(luogo.isEmpty() || idGita.isEmpty()){
             throw new IllegalArgumentException("Riempi tutte le caselle");
@@ -32,12 +36,16 @@ public class Gita {
         this.idGita = idGita;
         this.mappaStudenti = new HashMap<String, Studente>();
     }
+<<<<<<< Updated upstream
  
     /**
      * metodo per aggiungere uno studente all' HashMap
      * @param s
      * @return 
      */
+=======
+    
+>>>>>>> Stashed changes
     public boolean aggiungiStudente(Studente s){
         if (this.mappaStudenti.containsKey(s.getMatricola())) {
             return false;
@@ -46,11 +54,15 @@ public class Gita {
         return true;
     }
 
+<<<<<<< Updated upstream
   
     /**
      * get di Luogo
      * @return 
      */
+=======
+    
+>>>>>>> Stashed changes
     public String getLuogo() {
         return luogo;
     }
@@ -94,12 +106,16 @@ public class Gita {
     public void setDurata(int durata) {
         this.durata = durata;
     }
+<<<<<<< Updated upstream
    
     /**
      * elimina uno studente in base alla sua matricola
      * @param matricola
      * @return 
      */
+=======
+    
+>>>>>>> Stashed changes
     public boolean eliminaStudente(String matricola) {
         if (this.mappaStudenti.containsKey(matricola)) {
             this.mappaStudenti.remove(matricola);
