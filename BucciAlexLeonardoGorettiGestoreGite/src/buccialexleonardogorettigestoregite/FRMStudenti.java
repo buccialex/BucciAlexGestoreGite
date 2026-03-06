@@ -27,7 +27,6 @@ public class FRMStudenti extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         PNLIscrizioneStudente = new javax.swing.JPanel();
         LBLTitoloStudenti = new javax.swing.JLabel();
@@ -46,6 +45,8 @@ public class FRMStudenti extends javax.swing.JFrame {
         BTNCancellaStudente = new javax.swing.JButton();
         BTNTornaIndietro = new javax.swing.JButton();
         BTNOrdinaGita = new javax.swing.JButton();
+        LBLClasse = new javax.swing.JLabel();
+        TXTClasse = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Iscrizione Studente");
@@ -103,6 +104,8 @@ public class FRMStudenti extends javax.swing.JFrame {
 
         BTNOrdinaGita.setText("Ordina per gita");
 
+        LBLClasse.setText("Classe:");
+
         javax.swing.GroupLayout PNLIscrizioneStudenteLayout = new javax.swing.GroupLayout(PNLIscrizioneStudente);
         PNLIscrizioneStudente.setLayout(PNLIscrizioneStudenteLayout);
         PNLIscrizioneStudenteLayout.setHorizontalGroup(
@@ -122,7 +125,11 @@ public class FRMStudenti extends javax.swing.JFrame {
                             .addComponent(TXTNomeStudente)
                             .addComponent(TXTCognomeStudente)
                             .addComponent(TXTCodiceStudente)))
-                    .addComponent(jScrollPane1))
+                    .addComponent(jScrollPane1)
+                    .addGroup(PNLIscrizioneStudenteLayout.createSequentialGroup()
+                        .addComponent(LBLClasse, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(TXTClasse, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(BTNCreaStudente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -136,47 +143,49 @@ public class FRMStudenti extends javax.swing.JFrame {
         PNLIscrizioneStudenteLayout.setVerticalGroup(
             PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PNLIscrizioneStudenteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(LBLTitoloStudenti)
-                .addGap(18, 18, 18)
-                .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LBLNomeStudente)
-                    .addComponent(TXTNomeStudente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LBLCognomeStudente)
-                    .addComponent(TXTCognomeStudente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LBLCodiceStudente)
-                    .addComponent(TXTCodiceStudente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addComponent(LBLSelezionaGita)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(PNLIscrizioneStudenteLayout.createSequentialGroup()
-                .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PNLIscrizioneStudenteLayout.createSequentialGroup()
+                .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PNLIscrizioneStudenteLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(LBLTitoloStudenti)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LBLNomeStudente)
+                            .addComponent(TXTNomeStudente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LBLCognomeStudente)
+                            .addComponent(TXTCognomeStudente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LBLCodiceStudente)
+                            .addComponent(TXTCodiceStudente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(TXTClasse, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LBLClasse)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PNLIscrizioneStudenteLayout.createSequentialGroup()
                         .addComponent(BTNTornaIndietro, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(BTNOrdinaGita, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)))
+                .addGroup(PNLIscrizioneStudenteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PNLIscrizioneStudenteLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(BTNCancellaStudente, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(BTNCreaStudente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 9, Short.MAX_VALUE))
+                        .addComponent(BTNCreaStudente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PNLIscrizioneStudenteLayout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addComponent(LBLSelezionaGita)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
 
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.ipadx = 47;
-        gridBagConstraints.ipady = 9;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(6, 6, 6, 6);
-        getContentPane().add(PNLIscrizioneStudente, gridBagConstraints);
+        getContentPane().add(PNLIscrizioneStudente, new java.awt.GridBagConstraints());
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -211,6 +220,7 @@ public class FRMStudenti extends javax.swing.JFrame {
     private javax.swing.JButton BTNCreaStudente;
     private javax.swing.JButton BTNOrdinaGita;
     private javax.swing.JButton BTNTornaIndietro;
+    private javax.swing.JLabel LBLClasse;
     private javax.swing.JLabel LBLCodiceStudente;
     private javax.swing.JLabel LBLCognomeStudente;
     private javax.swing.JLabel LBLNomeStudente;
@@ -219,6 +229,7 @@ public class FRMStudenti extends javax.swing.JFrame {
     private javax.swing.JList<String> LSTListaGite;
     private javax.swing.JPanel PNLIscrizioneStudente;
     private javax.swing.JTable TBLStudenti;
+    private javax.swing.JTextField TXTClasse;
     private javax.swing.JTextField TXTCodiceStudente;
     private javax.swing.JTextField TXTCognomeStudente;
     private javax.swing.JTextField TXTNomeStudente;
